@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="bad">❌ الكود غير صالح</h1>
+<p class="details">السبب: {{ reason }}</p>
+<a class="btn" href="{{ url_for('manual') }}">رجوع</a>
+{% endblock %}

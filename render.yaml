@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mr-wedding
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app.app:app
+    envVars:
+      - key: DATABASE_PATH
+        value: invites.db

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>فحص الدعوة يدويًا</h2>
+<form method="post" class="form">
+  <label for="token">أدخل الرمز</label>
+  <input id="token" name="token" required placeholder="الصق الرمز هنا">
+  <button type="submit" class="btn">تحقق</button>
+</form>
+{% endblock %}

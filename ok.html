@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="ok">✅ أهلاً وسهلاً</h1>
+<h2 class="names">{{ names }}</h2>
+<p class="details">تم قبول الدعوة لحفل رقم {{ event_id }}</p>
+<p class="details">وقت الدخول: {{ used_at }}</p>
+<p class="blessing">{{ blessing }}</p>
+{% endblock %}
